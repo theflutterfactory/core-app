@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_factory/view/docs_page.dart';
+import 'package:flutter_factory/view/video_page.dart';
 
 class Home extends StatelessWidget {
   Home({Key? key}) : super(key: key);
@@ -6,8 +8,8 @@ class Home extends StatelessWidget {
   TabBarView _buildTabBarView() {
     return TabBarView(
       children: [
-        Container(color: Colors.deepPurple),
-        Container(color: Colors.red),
+        VideoPage(),
+        DocsPage(),
       ],
     );
   }
