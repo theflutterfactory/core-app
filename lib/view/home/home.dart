@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_factory/view/docs_page.dart';
-import 'package:flutter_factory/view/video_page.dart';
+import 'package:flutterfactory/view/docs_page.dart';
+import 'package:flutterfactory/view/video_page.dart';
 
 class Home extends StatelessWidget {
   Home({Key? key}) : super(key: key);

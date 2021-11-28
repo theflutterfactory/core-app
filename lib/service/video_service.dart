@@ -1,5 +1,5 @@
-import 'package:flutter_factory/model/video.dart';
-import 'package:flutter_factory/repository/video_repository.dart';
+import 'package:flutterfactory/model/video.dart';
+import 'package:flutterfactory/repository/video_repository.dart';
 
 class VideoService {
   final VideoRepository _videoRepository = VideoRepository();

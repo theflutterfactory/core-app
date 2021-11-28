@@ -1,4 +1,4 @@
-import 'package:flutter_factory/model/video.dart';
+import 'package:flutterfactory/model/video.dart';
 
 ///A useful abstraction layer between services and data
 class VideoRepository {

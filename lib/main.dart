@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:flutter_factory/controller/video_notifier.dart';
-import 'package:flutter_factory/view/home/home.dart';
+import 'package:flutterfactory/controller/video_notifier.dart';
+import 'package:flutterfactory/view/home/home.dart';
 import 'package:provider/provider.dart';
 
 void main() {

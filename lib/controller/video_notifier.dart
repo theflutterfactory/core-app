@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_factory/model/video.dart';
-import 'package:flutter_factory/service/video_service.dart';
+import 'package:flutterfactory/model/video.dart';
+import 'package:flutterfactory/service/video_service.dart';
 
 class VideoNotifier extends ChangeNotifier {
   List<Video> _videoList = [];

@@ -1,4 +1,4 @@
-# flutter_factory
+# flutterfactory
 
 A new Flutter project.
 
