@@ -47,6 +47,7 @@ android {
         applicationId "com.flutterfactory.app"
         minSdkVersion 20
         targetSdkVersion 30
+        multiDexEnabled = true
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
