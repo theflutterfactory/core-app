@@ -1,9 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutterfactory/controller/video_notifier.dart';
 import 'package:flutterfactory/view/docs_page.dart';
 import 'package:flutterfactory/view/video_page.dart';
+import 'package:provider/provider.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  @override
+  void initState() {
+    super.initState();
+    Provider.of<VideoNotifier>(context, listen: false).fetchVideos();
+  }
 
   TabBarView _buildTabBarView() {
     return TabBarView(

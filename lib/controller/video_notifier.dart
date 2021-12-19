@@ -10,7 +10,6 @@ class VideoNotifier extends ChangeNotifier {
 
   Future<void> fetchVideos() async {
     _videoList = await _videoService.fetchVideos();
-    print(_videoList.length);
     notifyListeners();
   }
 }
