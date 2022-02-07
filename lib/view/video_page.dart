@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterfactory/controller/video_notifier.dart';
 import 'package:flutterfactory/model/video.dart';
+import 'package:flutterfactory/view/video_list_tile.dart';
 import 'package:provider/provider.dart';
 
 class VideoPage extends StatelessWidget {
@@ -16,15 +17,7 @@ class VideoPage extends StatelessWidget {
           child: ListView.builder(
             padding: EdgeInsets.all(16),
             itemCount: videoList.length,
-            itemBuilder: (_, index) => Card(
-              child: Container(
-                padding: EdgeInsets.all(32),
-                child: Text(
-                  videoList[index].name,
-                  style: TextStyle(fontSize: 20),
-                ),
-              ),
-            ),
+            itemBuilder: (_, index) => VideoListTile(videoList[index]),
           ),
         );
       },

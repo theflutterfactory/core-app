@@ -31,3 +31,4 @@ flutter:
 
   assets:
     - images/logo.png
+    - secrets.json

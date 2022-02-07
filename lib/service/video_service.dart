@@ -5,11 +5,10 @@ class VideoService {
   final VideoRepository _videoRepository = VideoRepository();
 
   Future<List<Video>> fetchVideos() async {
-    var videos = await _videoRepository.fetchAllVideos();
+    var response = await _videoRepository.fetchAllVideos();
 
-    return videos.map((snapshot) {
-      var videoMap = snapshot.data();
-      return Video(videoMap['name'], '');
-    }).toList();
+    return List<Video>.from(
+      (response.data['items']).map((json) => Video.fromJson(json['snippet'])),
+    );
   }
 }
