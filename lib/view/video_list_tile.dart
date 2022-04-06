@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterfactory/model/video.dart';
+import 'package:flutterfactory/view/video_player_screen.dart';
 
 class VideoListTile extends StatelessWidget {
   final Video video;
@@ -22,7 +23,10 @@ class VideoListTile extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => VideoPlayerScreen()),
+                  ),
                   child: Text(
                     'View',
                     style: TextStyle(
